@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            background-color: burlywood;
+            border: 2px solid blanchedalmond ;
+            width:800px;
+            height: 800px;
+            overflow: auto;
+            /* flex-wrap: wrap; */
+        }
+        @media(min-width:624px){
+            .container{
+                flex-direction: row;
+
+            }
+        }
+        @media(max-width:624px){
+            .container{
+                flex-direction:column;
+            }
+        }
+        #box2{
+            height:200px;
+            width:200px;
+            border: solid black 2px;
+            
+        }
+        #box1{
+            display:flex;
+            flex-direction:column ;
+            background-color: bisque;
+            width:50%;
+        }
+        #item1{
+            
+            background-color: aquamarine;
+        }
+        #item2{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="item" id="item1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui laboriosam atque, delectus maiores et ullam consequatur consectetur laudantium, sit sequi, voluptate facere corporis beatae dignissimos vero officiis autem? Quae totam, modi dicta explicabo culpa laudantium dolores aliquid nulla aut enim aspernatur asperiores eius deserunt ad deleniti, nostrum consequuntur voluptatum similique facere eveniet? Quae temporibus ut sit saepe possimus culpa officiis nesciunt distinctio ullam corrupti minus non totam beatae commodi neque magnam, labore veniam amet aut mollitia? Omnis cumque atque sed a consectetur voluptatum nostrum eos, inventore architecto recusandae dolores quo, eveniet unde voluptates natus officia illo cum excepturi officiis corporis nobis reprehenderit numquam molestias provident. Alias dolore natus consequatur, minima facilis ad libero veniam quidem ipsam vitae id animi ullam quasi, aliquid fugit, nam obcaecati. Dicta nesciunt velit cum odio, iste laudantium magnam consequatur cupiditate unde ipsum quam officiis, architecto quisquam, veniam quidem ex modi iure dignissimos sapiente molestias pariatur eaque? Ipsam, consequuntur? Molestiae adipisci, quae rem accusantium laudantium voluptates minima quasi commodi eum dicta temporibus ex ipsa deleniti molestias ullam quia consequatur repudiandae illum. Debitis dolores blanditiis iste ad voluptatum iusto aperiam nisi cupiditate illum omnis obcaecati exercitationem deleniti dicta, itaque, quos eos officiis, illo ab. Asperiores, enim adipisci.
+            </div>
+            <div class="item" id="item2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, doloribus. Dolorum vero non accusantium? Eveniet consequuntur tenetur corporis laudantium rem iure quia quaerat officiis cupiditate quod, cum, accusamus provident dolore sed nisi reprehenderit nulla illum labore debitis eligendi perspiciatis, ut porro sunt facilis? Error, magni expedita perferendis officia nam sed minus reiciendis, quae dolor dolorem quas! Sed cupiditate dolore quis. Cumque harum excepturi dignissimos sint reiciendis, magni illo et reprehenderit esse, animi asperiores vero mollitia ullam delectus vel amet eius ea sed aspernatur saepe, quaerat possimus? Dolores cumque esse soluta voluptatem nostrum possimus sunt modi dolorum repudiandae, ad eligendi delectus facilis voluptates neque quo veniam excepturi officiis consectetur eveniet atque! Veniam quasi quos ad minima beatae delectus quisquam itaque rerum dolorem id praesentium nisi consectetur repudiandae quod consequatur est, quas debitis. Deserunt consequuntur, libero aperiam est beatae eum assumenda laborum autem nobis rerum quod. Earum quia rem fuga voluptatum minus ullam nam consectetur autem, magnam ex perspiciatis magni mollitia delectus, tenetur eligendi dicta quam eum expedita deserunt officia eos, rerum ut possimus ab. Impedit, commodi architecto consequatur velit fugiat dolorem ratione dolorum rem non quibusdam qui voluptate ad at a soluta assumenda doloremque veniam eum aliquam nulla amet. Fuga, aliquam.
+            </div>
+        </div>
+        <img src="IMG-20250322-WA0011.jpg" alt="3people" id="box2" class="box">
+        
+        
+    </div>
+</body>
+</html>

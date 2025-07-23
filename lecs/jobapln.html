@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Job Application</h2>
+        <label for="name">Name:<br></label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:<br></label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="phone">Phone:<br></label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <label for="resume">Resume:<br></label>
+        <input type="file" name="resume" id="resume">
+        <br>
+        <label for="experience">Experience(years):<br></label>
+        <input type="number" name="experience" id="experience" min="0" max="50">
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="Js" id="js">
+            <label for="js">JavaScript</label>
+        </fieldset>
+        <label for="highestedu">Highest Education:<br></label>
+        <select name="highestedu" id="highestedu">
+            <option value="Highschool">High School</option>
+            <option value="Graduation">Graduation</option>
+            <option value="PhD">PhD</option>
+            <option value="Other">Other</option>
+        </select>
+        <h4>Availability:</h4>
+        <input type="radio" name="radio" id="radio1">
+        <label for="radio1">Full-time:<br></label>
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2">Part-Time:<br></label>
+        <label for="addcomment">Additional Comment:<br></label>
+        <textarea name="addcomment" id="addcomment" cols="50" rows="5"></textarea>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

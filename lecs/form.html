@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="email">Enter Email ID : </label>
+            <input type="text" id="email" placeholder="xyz12@gmail.com">
+            <br/>
+            <br/>
+            <label for="password">Enter password : </label>
+            <input type="password" id="password" placeholder="password">
+            <br>
+            <br> 
+            <label for="dob">DOB : </label>
+            <input type="date" id="dob">
+            <br>
+            <br>
+            <!--but here we are able to select both the radio option at the same time but we need one to be selected-->
+            <!--HW how we could do that??-->
+            <label for="Male">Male</label>
+            <input type="radio" name="male" id="Male">
+            
+            <label for="Female">Female</label>
+            <input type="radio" name="Female" id="Female">
+            <br>
+            <br>
+            <fieldset>
+                <legend>How did you find us?</legend>
+                <input type="checkbox" name="check" id="check">
+                <label for="check">Instagram</label>
+                <br>
+                <input type="checkbox" name="check" id="check1">
+                <label for="check1">TV ads</label>
+            </fieldset>
+            <br>
+            <br>
+            <label for="file">Upload: </label>
+            <input type="file" name="browse" id="file">
+            <br>
+            <br>
+            <label for="lag">Select Language: </label>
+            <select name="Language" id="lag">
+                <option value="none">--select--</option>
+                <option vlaue="English">ENG</option>
+                <option vlaue="Hindi">HINDI</option>
+                <option vlaue="Others">Others</option>
+            </select>
+            <br>
+            <br>
+            <label for="intro">Enter Something about you: <br></label>
+            <textarea name="intro" id="intro" cols="30" rows="10" placeholder="enter your answer here"></textarea>
+
+            <!--two ways to make button-->
+            <br>
+            <br>
+            <button>Reset</button>
+            <input type="submit" value="Submit">
+            <input type="image" name="imgbutton" id="imgbutton" alt="click here" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_4UBLdr2DLApx9jKRHCp2m16xFzeN1R2gw&s"
+             height="25px" width="25px">
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background-color:palegreen;
+            border: 5px solid black;
+        }
+        .box{
+            width:350px;
+            height:80px;
+            background-color:palevioletred;
+            border-radius: 15px;
+            margin:10px;
+            border:3px solid pink;
+            position: relative;
+            animation-name: leftrightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.1,0.5,0.7,0.1);
+            animation-fill-mode:both ;
+        }
+        @keyframes leftrightmovement{
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:1300px;
+            }
+        }
+        #box2{
+            background-color: peachpuff;
+            border-radius: 15px;
+            border: 3px burlywood solid ;
+            width: 350px;
+            height:80px;
+            margin:10px;
+            position: relative;
+            animation: 5s ease-in 1ms infinite alternate both running tooandfro;
+        }
+        @keyframes tooandfro{
+            from{
+                top:600px;
+                left:0;
+            }
+            to{
+                top:600px;
+                left:1300px;
+            }
+        }
+        #circle{
+            background-color: peachpuff;
+            border-radius: 50px;
+            border: 3px burlywood solid ;
+            width: 50px;
+            height:50px;
+            margin:10px;
+            top:175px;
+            left:650px;
+            position: relative;
+            animation: 10s ease-in-out 1ms infinite alternate-reverse both running random;
+        }
+        @keyframes random{
+            0%{
+                top:175px;
+                left:650px;
+            }
+            25%{
+                top:-100px;
+                left:0;
+            }
+            50%{
+                top:-100px;
+                left:1280px;
+            }
+            75%{
+                top:470px;
+                left:20px;
+            }
+            100%{
+                top:470px;
+                left:1280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div id="box2"></div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>

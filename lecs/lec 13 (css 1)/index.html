@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--External css-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Internal css-->
+    <style>
+    /*element selector*/
+    h1{
+        color: green;
+    }  
+    p.paragraph{
+        background-color: blueviolet !important;
+    }
+    p,article{
+        width: 500px;
+    }
+    /* class selector*/
+    .paragraph{
+        color: burlywood;
+    }
+    /* id selector */
+    #para{
+        font-style: italic;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to css</h1>
+    <!--the 1st para with inline css disn't take the blueviolet color becz it already had an inline property for bg
+    and inline css dominates over internal or external but is we add !important in internal or external than 
+    it will dominate..-->
+
+    <!--Inline css-->
+    <p style="background-color: yellow;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo possimus voluptates ipsa a quia, quaerat temporibus alias eum perspiciatis reprehenderit.</p>
+    <p style="color: aqua;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita harum nam placeat inventore optio dignissimos accusamus numquam perspiciatis delectus, pariatur voluptatum illo voluptatem consectetur, consequatur, fugit aliquid autem accusantium?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, sunt! Expedita ipsum beatae itaque nulla cumque fugit ab esse nesciunt tempore, harum ducimus doloremque qui, perspiciatis corrupti dicta libero facilis maxime. Ex quidem cum iusto distinctio, tenetur est eligendi. Nesciunt necessitatibus maxime pariatur labore non odit voluptatibus assumenda aspernatur earum.</p>
+    <h1>yar ye kab khatam hoga</h2>
+    <p class="paragraph">heheheehehehhehehehehe</p>
+    <p class="paragraph">idhasouhcudwhfcofwhjfpiwejfpwejfpiwejfpwehfojwehfpiwehfpiwehfw</p>
+    <p id="para" class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi quae temporibus incidunt laboriosam officia distinctio aliquam consequuntur architecto neque?</p>
+    <article class="paragraph">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta autem, nam voluptates,
+        eligendi eum beatae explicabo magnam ut nisi tempora voluptate dolor minus veritatis maxime
+        ea delectus distinctio debitis natus ab culpa impedit deleniti! Distinctio quis accusamus 
+        sequi repellendus quas unde doloribus praesentium cupiditate dolorem a quam velit, maxime
+        quos accusantium architecto in ipsa voluptatem nam tempora veniam, consequuntur, labore
+        possimus recusandae. Molestiae nulla deleniti soluta numquam dolorem ut quam. Minima, 
+        excepturi illum accusamus debitis repudiandae fuga? Culpa, nostrum totam reiciendis nulla
+        error modi cum facere atque magnam nobis possimus nihil provident fuga facilis nisi assumenda
+        amet tempore temporibus veritatis.
+    </article>
+
+    <footer>i am footer</footer>
+</body>
+</html>

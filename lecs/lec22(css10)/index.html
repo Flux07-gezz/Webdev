@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width:330px;
+        }
+        #ml{
+            height:100px;
+        }
+        .container{
+            background-color: bisque;
+            height: 650px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .box{
+            background-color:aquamarine;
+            width:var(--custom-width);
+            height:330px;
+            border:1px solid var(--primary-color);
+            margin:5px;
+            padding :5px;
+            box-shadow: -10px 15px 50px 10px var(--primary-color) ,inset 10px 15px paleturquoise;
+
+        }
+        h2{
+            text-shadow: 5px 5px 10px peru , 1px 1px red , 4px 4px lightseagreen;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box">
+            <img src="ml.jpg" alt="mylibrary" id="ml">
+            <h2>Welcome to my library!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et odit nulla sunt omnis, quasi consequuntur commodi deleniti dicta ipsam neque corporis, id atque vitae.</p>
+        </div>
+     </div>
+</body>
+</html>

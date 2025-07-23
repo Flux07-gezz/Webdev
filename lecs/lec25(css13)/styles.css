@@ -1,0 +1,31 @@
+.box{
+    width:400px;
+    height:400px;
+    background-color: beige;
+    border: 3px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    transition: all 3s linear;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    /* transform: rotate(45deg) ;
+    transform:scale(1.5);
+    transform:scale(50%);
+    transform: skew(5deg);
+    transform:translate(500px ,250px); */
+    transform: scale(.5) translate(200px,200px) rotate(20deg) skew(5deg,5deg);
+    /* want all together */
+    /* transform: matrix(2,10,2,2,2,2); */
+}
+p{
+    font-size: 36px;
+}
