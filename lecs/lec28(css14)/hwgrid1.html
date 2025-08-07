@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100%;
+            height:100vh;
+        }
+        .container{
+            border: yellow solid 4px;
+            background-color: azure;
+            width: 100%;
+            height:100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 15% 25% 5%;
+            place-items: stretch;
+            gap :20px;
+            padding :20px;
+        }
+        .item{
+            background-color: brown;
+            border: black solid 2px;
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .two{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .four{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .five{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+    </div>
+</body>
+</html>
