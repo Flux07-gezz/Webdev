@@ -9,10 +9,132 @@ body{
 }
 
 .container{
-    max-width:90vw;
+    max-width:80vw;
     padding:2rem 1rem;
     margin:0 auto;
 }
 a{
     text-decoration: none;
+}
+.header{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.hearder h1{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.header p{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(104, 97, 97);
+    margin:0 auto ;
+}
+.content{
+    display:grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(1,1fr);
+}
+@media (min-width:650px){
+    .content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:1080px){
+    .content{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(min-width:1340px){
+    .content{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(193, 178, 178);
+    border-radius: 8px;
+}
+.cardimg{
+    position: relative;
+    overflow: hidden;
+    height:11rem ;
+}
+@media(min-width:768px){
+    .cardimg{
+        height:14rem;
+    }
+}
+.cardimg img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+.dicribtion{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.dicribtion h2{
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height:1.5rem;
+    color: rgb(54, 54, 54);
+    margin-bottom: 0.5rem;
+}
+.a:hover .title{
+    color: rgb(55, 55, 142);
+}
+.card:hover .cardimg img{
+    transform: scale(1.15);
+    transition: 200ms;
+}
+.dicribtion p{
+    color: rgba(44, 43, 43, 0.769);
+    font-size: 1rem;
+}
+.creater{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:1.5rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.author img{
+    height:2.5rem;
+    width:2.5rem;
+    overflow: hidden;
+    border: 1px rgba(75, 73, 73, 0.329) solid;
+    border-radius: 50%;
+    background-color: rgba(134, 133, 133, 0.153);
+}
+.avatr_info{
+    display: flex;
+    flex-direction: column;
+}
+.avatr_info a{
+    color: rgb(45, 45, 96);
+}
+.avatr_info p{
+    color: rgba(94, 93, 93, 0.724);
+    font-size: .85rem;
+}
+.type{
+    padding:.25rem;
+    border: 2px rgb(69, 69, 140) solid;
+    color: rgb(69, 69, 140);
+    border-radius: 5px;
+    height:fit-content;
+    box-shadow: inset 2px 2px 0.5px;
+    font-weight: 550;
+    
 }
