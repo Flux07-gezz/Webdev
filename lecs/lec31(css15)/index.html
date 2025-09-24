@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding:4rem;
+            display : grid;
+            gap:1rem;
+            background-color: rgb(50, 50, 50);
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: repeat(auto-fit , minmax(200px,500px));
+            /* auto-fill creates empty tracks: when there's excess space, potentially leading to gaps. */
+            /* auto-fit collapses empty tracks: and stretches existing items to fill the space, resulting in no visible gaps. */
+        }
+        .div{
+            border:3px solid black;
+            background-color: rgb(61, 61, 155);
+            color: wheat;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div">A</div>
+        <div class="div">B</div>
+        <div class="div">C</div>
+        <div class="div">D</div>
+        <div class="div">E</div>
+        <div class="div">F</div>
+        <div class="div">G</div>
+        <div class="div">H</div>
+        <div class="div">I</div>
+        <div class="div">J</div>
+        <div class="div">K</div>
+    </div>
+</body>
+</html>

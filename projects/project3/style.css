@@ -35,9 +35,11 @@ a{
 .content{
     display:grid;
     gap:1.5rem;
-    grid-template-columns: repeat(1,1fr);
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(350px,400px));
+    justify-content: center;
 }
-@media (min-width:650px){
+/* @media (min-width:650px){
     .content{
         grid-template-columns: repeat(2,1fr);
     }
@@ -51,7 +53,7 @@ a{
     .content{
         grid-template-columns: repeat(4,1fr);
     }
-}
+} */
 .card{
     display: flex;
     flex-direction: column;

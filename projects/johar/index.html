@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Travel</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 50px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo h1 {
+      font-size: 22px;
+      color: #f44336;
+      font-style: italic;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f44336;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1583132332062-829497b6fd0c') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 70px; /* navbar space */
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      color: white;
+      background: rgba(0,0,0,0.4);
+      padding: 15px 25px;
+      border-radius: 8px;
+    }
+
+    .hero h2 span {
+      color: #ff5a7a;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 70px;
+    }
+
+    /* Cards Section */
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 60px 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #333;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      nav.active ul {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="" alt="Logo">
+      <h1>JOHAR</h1>
+    </div>
+    <nav>
+      <div class="menu-toggle">☰</div>
+      <ul>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Festival Tour</a></li>
+        <li><a href="#">Pilgrimage India</a></li>
+        <li><a href="#">Luxurious of India ▼</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Best <span>Tour</span> of India</h2>
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="15 Best Darjeeling Hill Stations to Visit in 2025.webp" alt="Taj Mahal">
+      <h3>Taj Mahal</h3>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kerala_backwaters.jpg" alt="Kerala Backwaters">
+      <h3>Kerala Backwaters</h3>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Golden_Temple%2C_Amritsar.jpg" alt="Golden Temple">
+      <h3>Golden Temple</h3>
+    </div>
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
