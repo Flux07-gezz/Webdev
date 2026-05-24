@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+    <script>
+        console.log("learn objects");
+        let key="key";
+        let key1="key1";
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            "Father's name": "Doe",
+            [key]: "new value",
+            "key1": "value1",
+            address:{
+                street: "123 Main St",
+                city: "New York",
+                zip: "10001"
+            }, // nested object
+            greet:function(){
+                console.log("Hello, my name is " + this.name);
+            } // object can be a function as well
+        };
+        console.log(person.name);
+        console.log(person["Father's name"]);
+        console.log(person["city"]);
+        console.log(person.key);
+        console.log(person[key1]);
+        person.age = 31;    // updating the value of an existing key
+        person.son = "Smith"; // adding new key-value pair to the object
+        console.log(person);
+        //so we can use person[] for any key 
+        // but we can't use person.key for keys with spaces or special characters
+        delete person.city; // deleting a key-value pair from the object
+        console.log(person);
+        console.log("age" in person); // checking if a key exists in the object
+        console.log (person.address.city); // accessing nested object properties
+        console.log(person.greet()); // calling the greet function of the object
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

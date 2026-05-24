@@ -1,0 +1,51 @@
+*{
+    margin : 0;
+    padding : 0;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    /*background-color: #822b2b;*/
+    background-image: linear-gradient(to right , rgb(126, 79, 19) , rgb(195, 131, 12));
+    color: rgb(210, 204, 204);
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-family:"Caveat", cursive;
+}
+.logo{
+    font-family: 'Lobster Two', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: space-around;
+}
+nav ul li{
+    font-size: 12px;
+    list-style-type: none;
+    padding : 10px;
+}
+.hero{
+    background-color: rgb(202, 197, 184);
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap:120px;
+    align-items: center ;
+    font-family:"Caveat", cursive;
+}
+.hero-left .one{
+    font-size: 50px;
+}
+.hero-left .two{
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+.hero-right img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
