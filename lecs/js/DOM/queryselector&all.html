@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <button onclick="magic()" id="button1" class="button">Do the Magic</button>
+    </div>
+    <script>
+        function magic(){
+            let button=document.querySelector(".button"); // for box1
+            let boxes=document.querySelectorAll(".box"); // for all the boxes
+            console.log(button);
+            console.log(boxes);
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <button onclick="magic()" id="button1" class="button">Do the Magic</button>
+    </div>
+    <script>
+        function magic(){
+            let box1=Array.from(document.getElementsByClassName("box")); // for box1
+            // box1[0].innerHTML="Magic Done";
+            // box1[1].innerHTML="Magic Done 2nd"; // for box2
+            // box1[2].innerHTML="Magic Done 3rd"; // for box3
+            // for(let i=0;i<box1.length;i++){
+            //     box1[i].innerHTML="Magic Done "+(i+1);
+            // }
+            for (ele of box1){
+                ele.innerHTML="Magic Done "+ele.innerHTML;
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

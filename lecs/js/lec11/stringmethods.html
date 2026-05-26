@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <script>
+        console.log("sting methods");
+        let name ="  harry  "
+        console.log(name.length);
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+        console.log(name.trim());
+        console.log(name.includes("har"));
+        console.log(name.indexOf("a"));
+        // if the character is not found it will return -1
+        console.log(name.lastIndexOf("a"));
+        console.log(name.startsWith("h"));
+        console.log(name.endsWith("y"));
+        console.log(name.slice(2,5));//end is not included
+        console.log(name.slice(2));
+        let text = "Coding";
+        console.log(text.substring(0, 3)); // "Cod"//similar to slice but does not accept negative index
+        let msg = "I love Python";
+        console.log(msg.replace("Python", "JavaScript"));
+         // "I love JavaScript"
+        let msg1 = "apple apple apple";
+        console.log(msg1.replace(/apple/g, "banana")); // "banana banana banana" all replaced
+        let data = "HTML,CSS,JavaScript";
+        let parts = data.split(",");
+        console.log(parts); // ["HTML", "CSS", "JavaScript"]
+        let lang = "JavaScript";
+        console.log(lang.charAt(0)); // "J"
+        let wow = "ha";
+        console.log(wow.repeat(3)); // "hahaha"
+        // all the methods makes a new string and does not change the original string because string is immutable in js
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
